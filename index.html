@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>España con Lupa</title>
+  <meta name="description" content="Datos de España y cómo funciona por dentro, explicados sin opinión de partido. Te lo cuenta Lupa.">
+  <link rel="icon" href="lupa.png">
+  <style>
+    :root {
+      --fondo: #1E1F23;
+      --tarjeta: #26272D;
+      --borde: #3A3B42;
+      --texto: #EDEDED;
+      --suave: #8E8F96;
+      --azul: #3D8BFF;
+      --azul-claro: #8DB8FF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 72px 24px 48px; }
+
+    header { text-align: center; margin-bottom: 64px; }
+    header img {
+      width: 120px; height: 120px; border-radius: 50%;
+      border: 1px solid var(--borde); margin-bottom: 24px;
+    }
+    h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em; }
+    h1 span { background: var(--azul); color: #fff; padding: 0 10px; border-radius: 8px; }
+    .usuario { color: var(--suave); margin-top: 6px; }
+    .lema { margin-top: 20px; font-size: 1.1rem; }
+
+    .boton {
+      display: inline-block; margin-top: 28px; padding: 12px 28px;
+      background: var(--azul); color: #fff; text-decoration: none;
+      border-radius: 999px; font-weight: 600;
+    }
+    .boton:hover { opacity: .9; }
+
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: .8rem; text-transform: uppercase; letter-spacing: .12em;
+      color: var(--suave); margin-bottom: 20px; font-weight: 600;
+    }
+    p + p { margin-top: 12px; }
+    .azul { color: var(--azul-claro); }
+
+    .lista { list-style: none; display: grid; gap: 12px; }
+    .lista li {
+      background: var(--tarjeta); border: 1px solid var(--borde);
+      border-radius: 16px; padding: 16px 20px;
+    }
+    .lista strong { display: block; }
+    .lista small { color: var(--suave); font-size: .9rem; }
+
+    footer {
+      text-align: center; color: var(--suave); font-size: .85rem;
+      border-top: 1px solid var(--borde); padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="lupa.png" alt="Lupa, la mascota de España con Lupa">
+      <h1>España con <span>Lupa</span></h1>
+      <p class="usuario">@espanaalgrano · TikTok</p>
+      <p class="lema">Soy Lupa, y te explico España con lupa.</p>
+      <a class="boton" href="https://www.tiktok.com/@espanaalgrano" target="_blank" rel="noopener">Sígueme en TikTok</a>
+    </header>
+
+    <section>
+      <h2>De qué va</h2>
+      <p>Vídeos cortos sobre <span class="azul">cómo funciona España por dentro</span>: instituciones, trámites, leyes y el dinero del día a día.</p>
+      <p>Datos comprobados en fuentes oficiales y explicados sin opinión de partido. Nada de política: solo lo que ves y usas cada día, mirado de cerca.</p>
+    </section>
+
+    <section>
+      <h2>Los temas</h2>
+      <ul class="lista">
+        <li><strong>Por dentro</strong><small>Cómo funcionan las instituciones y la administración.</small></li>
+        <li><strong>Ley al grano</strong><small>Las leyes de las que todo el mundo habla, explicadas.</small></li>
+        <li><strong>Dato de España</strong><small>Curiosidades con fuente que cambian cómo ves las cosas.</small></li>
+        <li><strong>Tu dinero</strong><small>Facturas, compras y lo que pagas de verdad.</small></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>De dónde sale la información</h2>
+      <p>Casi todo sale de fuentes oficiales, y cada dato lleva su fuente en el vídeo:</p>
+      <ul class="lista" style="margin-top: 20px;">
+        <li><strong>BOE</strong><small>Leyes, órdenes y normas, tal como se publican.</small></li>
+        <li><strong>Congreso de los Diputados</strong><small>Cómo funcionan las Cortes y se aprueban las leyes.</small></li>
+        <li><strong>Ministerios y Agencia Tributaria</strong><small>Interior, Consumo, Hacienda… lo que explica cada uno.</small></li>
+        <li><strong>CNMC</strong><small>Luz, gas, telecomunicaciones y competencia.</small></li>
+        <li><strong>INE e IGN</strong><small>Estadísticas oficiales y datos geográficos.</small></li>
+      </ul>
+    </section>
+
+    <footer>España con Lupa · Datos de España, sin opinión de partido</footer>
+  </main>
+</body>
+</html>
